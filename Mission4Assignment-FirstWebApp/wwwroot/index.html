@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>This is Kamrons Web Page</title>
+
+    <!--Links to the bootstrap and css files-->
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <h1>Kamron Richards</h1>
+
+    <br /><!--Image of what I like to do-->
+    <img src="../img/Golfing Photo.jpg" />
+    <br /><br />
+
+    <h2>What I hope to get out of IS 413:</h2>
+    <p>The main thing I hope to get out of this course will be to learn programming in C# that will be dynamic and effective in a enterprise level of programming. I also hope to recieve the help and guidance needed to become a better programmer. Another thing I hope to gain from this course is a knowledge that programming can be fun.</p>
+    <br />
+
+    <!---->
+    <h3>Top 3 jobs I'd like to have after I graduate:</h3>
+    <form id="form1">
+        <div>
+            <ol id="1stjob">1. Business Owner</ol><br />
+            <ol id="2stjob">2. Data Analysist</ol><br />
+            <ol id="3stjob">3. Software Developer</ol>
+        </div>
+    </form><br />
+
+    <!--Grade category form to input grade percentage-->
+    <h4>Grade Categories:</h4>
+    <form method="post">
+        <label>Assignments (50%):</label>
+        <input id="assignmentpct" /><br />
+        <label>Group Project (10%):</label>
+        <input id="groupprojectpct" /><br />
+        <label>Quizzes (10%):</label>
+        <input id="quizpct" /><br />
+        <label>Midterm Exam (10%):</label>
+        <input id="midtermexampct" /><br />
+        <label>Final Exam (10%):</label>
+        <input id="finalexampct" /><br />
+        <label>INTEX (10%):</label>
+        <input id="intexpct" /><br /><!--Calculation button-->
+        <input id="btnsend" type="button" value="Calculate Grade" /><br /><br />
+        <label>Percentage:</label>
+        <span id="percentage"></span>
+        <br>
+        <label>Letter Grade:</label>
+        <span id="letter-grade"></span>
+
+    </form>
+
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/GradeCalculator.js"></script>
+</body>
+</html>
