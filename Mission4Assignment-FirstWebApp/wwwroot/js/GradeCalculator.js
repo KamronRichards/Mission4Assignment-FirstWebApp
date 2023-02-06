@@ -3,14 +3,14 @@
     var assignment = parseFloat($("#assignmentpct").val());
     var groupproject = parseFloat($("#groupprojectpct").val());
     var quizzes = parseFloat($("#quizpct").val());
-    var midtermexam = parseFloat($("midtermexampct").val());
+    var midtermexam = parseFloat($("#midtermexampct").val());
     var finalexam = parseFloat($("#finalexampct").val());
     var intex = parseFloat($("#intexpct").val());
 
+
     //Calculate total percentage
-    // This somehow isn't working and I've tried everything I know but theres a deadline. Hope it doesn't kill me
     var totalPercentage = (assignment + groupproject + quizzes + midtermexam + finalexam + intex);
-    $("#percentage").text(totalPercentage.toFixed(2) + "%");
+    $("#percentage").text(totalPercentage + "%");
 
 
     //calculate the letter grade
