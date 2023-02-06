@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!--Setting title through Razor code-->
+    <title>@ViewData["Title"]</title>
+
+    <!--Links to the bootstrap and css files-->
+    <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/default.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <nav>
+        <!--Navigation to the pages-->
+        <a asp-controller="Kamapp" asp-action="Index">Home</a>
+        <a asp-controller="Kamapp" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="~/js/GradeCalculator.js"></script>
+
+</body>
+
+</html>
